@@ -5,7 +5,13 @@
   "description": "Acep Awaludin's second portfolio website",
   "author": "Acep Awaludin",
   "keywords": [
-    "fullstack web developer","developer","gatsby","programmer","portfolio","acep","awaludin"
+    "fullstack web developer",
+    "developer",
+    "gatsby",
+    "programmer",
+    "portfolio",
+    "acep",
+    "awaludin"
   ],
   "scripts": {
     "postinstall": "npm run theme",
@@ -24,6 +30,7 @@
     "@emotion/styled": "^11.10.6",
     "framer-motion": "^11.0.0",
     "gatsby": "^5.11.0",
+    "gatsby-plugin-netlify": "^5.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

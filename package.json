@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-chakra-ui-type-script",
+  "name": "acep-awaludin-portofolio-2",
   "version": "1.0.0",
   "private": true,
-  "description": "gatsby-starter-chakra-ui-type-script",
-  "author": "tylerapfledderer",
+  "description": "Acep Awaludin's second portfolio website",
+  "author": "Acep Awaludin",
   "keywords": [
-    "gatsby"
+    "fullstack web developer","developer","gatsby","programmer","portfolio","acep","awaludin"
   ],
   "scripts": {
     "postinstall": "npm run theme",

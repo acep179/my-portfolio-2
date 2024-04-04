@@ -14,5 +14,5 @@ export const onRenderBody: GatsbySSR['onRenderBody'] = ({ setPreBodyComponents }
 }
 
 export const wrapRootElement: GatsbySSR['wrapRootElement'] = ({ element }) => (
-   <WrapRootElement element={element} />
+  <WrapRootElement element={element} />
 )

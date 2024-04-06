@@ -1,26 +1,33 @@
 import React , { FC } from "react";
 import { HeadFC, PageProps } from "gatsby";
+import { FaSun, FaMoon } from "react-icons/fa";
 import {
   Box,
-  // useColorMode,
-  // Button
+  useColorMode,
+  IconButton,
 } from "@chakra-ui/react";
-import { Navbar } from "../templates";
+import { Navbar, FloatButtonContainer } from "../templates";
 
 const IndexPage: FC<PageProps> = () => {
 
-  // const { toggleColorMode } = useColorMode();
+  const { colorMode, toggleColorMode } = useColorMode();
 
   return (
     <Box as="main">
       <Navbar />
-      {/* <Button
-        onClick={toggleColorMode}
-        colorScheme="blue"
-        alignSelf="center"
-      >
-        Toggle Color Mode
-      </Button> */}
+      <FloatButtonContainer>
+        <IconButton
+          backgroundColor={colorMode === 'light' ? 'white' : 'blackalpha.50' }
+          position='relative'
+          aria-label="Toggle Color Mode"
+          variant='outline'
+          onClick={toggleColorMode}
+          colorScheme="teal"
+          fontSize='20px'
+          isRound={true}
+          icon={colorMode === 'light' ? <FaMoon /> : <FaSun /> }
+        />
+      </FloatButtonContainer>
     </Box>
   );
 };

@@ -2,6 +2,8 @@ import React , { FC } from "react";
 import { HeadFC, PageProps } from "gatsby";
 import {
   Box,
+  // useColorMode,
+  // Button
 } from "@chakra-ui/react";
 import { Navbar } from "../templates";
 

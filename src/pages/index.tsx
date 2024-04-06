@@ -6,15 +6,19 @@ import {
   useColorMode,
   IconButton,
 } from "@chakra-ui/react";
-import { Navbar, FloatButtonContainer } from "../templates";
+import { Navbar, Header, FloatButtonContainer } from "../templates";
+
+import "@fontsource/poppins"
 
 const IndexPage: FC<PageProps> = () => {
 
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
-    <Box as="main">
+    <Box as="main" fontFamily="Poppins, sans-serif, serif" >
       <Navbar />
+      <Header />
+      
       <FloatButtonContainer>
         <IconButton
           backgroundColor={colorMode === 'light' ? 'white' : 'blackalpha.50' }

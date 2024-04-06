@@ -36,7 +36,7 @@ const MenuList = (props:HTMLChakraProps<"li">) => {
           borderBottom:'2px solid',
           borderBottomColor:'teal.500',
           _dark:{
-            borderBottomColor:'teal.200'
+            borderBottomColor:'teal.300'
           }
         }}
       >
@@ -48,7 +48,7 @@ const MenuList = (props:HTMLChakraProps<"li">) => {
           display='block'
           fontWeight='semibold'
           _hover={{color:'teal.600'}}
-          _dark={{color:'teal.200'}}
+          _dark={{color:'teal.300'}}
         >
           {menu.title}
         </ChakraLink>
@@ -62,7 +62,7 @@ const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   return (
-    <Center>
+    <Center fontFamily="-apple-system, sans-serif, serif" >
       <Flex
         width={['full','container.sm','container.md','container.lg','container.xl']}
         padding={['10px 5px 10px 10px', null, '10px 20px 10px 10px']}
@@ -70,7 +70,7 @@ const Navbar = () => {
         gap='2'
       >
         <Box p='2'>
-          <Heading color='teal.500' _dark={{color:'teal.200'}} size='md'>Acep Awaludin</Heading>
+          <Heading color='teal.500' _dark={{color:'teal.300'}} size='md'>Acep Awaludin</Heading>
         </Box>
 
         <Spacer />
@@ -94,7 +94,7 @@ const Navbar = () => {
               as={IoClose}
               cursor='pointer'
               color='teal'
-              _dark={{color:'teal.200'}}
+              _dark={{color:'teal.300'}}
               _hover={{
                 backgroundColor:'teal.50',
                 _dark:{backgroundColor:'teal.700'}

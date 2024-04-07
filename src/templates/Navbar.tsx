@@ -62,7 +62,7 @@ const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   return (
-    <Center fontFamily="-apple-system, sans-serif, serif" >
+    <Center fontFamily="'Fira Mono', monospace" >
       <Flex
         width={['full','container.sm','container.md','container.lg','container.xl']}
         padding={['10px 5px 10px 10px', null, '10px 20px 10px 10px']}

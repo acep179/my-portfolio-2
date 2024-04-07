@@ -5,11 +5,12 @@ import {
   Box,
   useColorMode,
   IconButton,
-  Tooltip
+  Tooltip,
 } from "@chakra-ui/react";
-import { Navbar, Header, FloatButtonContainer } from "../templates";
+import { Navbar, Header, About, FloatButtonContainer } from "../templates";
 
 import "@fontsource/poppins"
+import '@fontsource/fira-mono';
 
 const IndexPage: FC<PageProps> = () => {
 
@@ -19,11 +20,12 @@ const IndexPage: FC<PageProps> = () => {
     <Box as="main" fontFamily="Poppins, sans-serif, serif" >
       <Navbar />
       <Header />
-      
+      <About />
+
       <FloatButtonContainer>
         <Tooltip label={`Change theme to ${colorMode === 'light' ? 'dark' : 'light' } mode`} closeOnClick={false}  placement='top' hasArrow >
           <IconButton
-            backgroundColor={colorMode === 'light' ? 'white' : 'blackalpha.50' }
+            backgroundColor={colorMode === 'light' ? 'white' : 'gray.800' }
             position='relative'
             aria-label="Toggle Color Mode"
             variant='outline'

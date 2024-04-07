@@ -1,6 +1,5 @@
 import * as React from "react";
 import {
-  Code,
   Heading,
   Text,
   Box,
@@ -9,7 +8,7 @@ import {
 const Header = () => {
 
   const greeting = 'Hi, my name is'
-  const name = 'Acep Awaludin'
+  const name = 'Acep Awaludin.'
   const jargon = 'I build things for the web.'
   const whoAmI = "I'm a fullstack web developer. Currently, I work at PT. Integrasi Logistik Cipta Solusi (ILCS)."
 
@@ -17,20 +16,20 @@ const Header = () => {
     <Box
       margin='auto'
       padding={[5,7,10]}
+      minH='100vh'
       maxW={
         ['full','container.sm',null,'container.md','container.lg']
       }
     >
 
-      <Code
+      <Text
         fontSize='large'
+        fontFamily="'Fira Mono', monospace"
         mb={2}
         color="teal"
         _dark={{color:"teal.300"}}
-        bg='transparent'
-      >
-        {greeting}
-      </Code>
+        children={greeting}
+      />
 
       <Heading
         fontFamily="Poppins, sans-serif, serif"

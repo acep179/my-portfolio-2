@@ -3,6 +3,7 @@ import {
   Heading,
   Text,
   Box,
+  Button
 } from "@chakra-ui/react";
 
 const Header = () => {
@@ -50,12 +51,15 @@ const Header = () => {
 
       <Text
         maxW={500}
+        mb={10}
         fontSize='lg'
         color='gray.600'
         _dark={{color:'gray.400'}}
       >
         {whoAmI}
       </Text>
+
+      <Button colorScheme="teal" variant='outline' size='lg' >Resume</Button>
     </Box>
   )
 }

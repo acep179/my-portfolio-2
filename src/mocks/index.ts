@@ -1,3 +1,5 @@
 import menus from './menu'
 
-export { menus }
+import workExperiences from './workExperiences'
+
+export { menus, workExperiences }

@@ -7,7 +7,7 @@ import {
   IconButton,
   Tooltip,
 } from "@chakra-ui/react";
-import { Navbar, Header, About, FloatButtonContainer } from "../templates";
+import { Navbar, Header, About, Experiences, FloatButtonContainer } from "../templates";
 
 import "@fontsource/poppins"
 import '@fontsource/fira-mono';
@@ -20,10 +20,12 @@ const IndexPage: FC<PageProps> = () => {
     <Box as="main" fontFamily="Poppins, sans-serif, serif" >
       <Navbar />
       <Header />
+
       <About />
+      <Experiences />
 
       <FloatButtonContainer>
-        <Tooltip label={`Change theme to ${colorMode === 'light' ? 'dark' : 'light' } mode`} closeOnClick={false}  placement='top' hasArrow >
+        <Tooltip label={`Change theme to ${colorMode === 'light' ? 'dark' : 'light' } mode`} closeOnClick={false}  placement='left' hasArrow >
           <IconButton
             backgroundColor={colorMode === 'light' ? 'white' : 'gray.800' }
             position='relative'

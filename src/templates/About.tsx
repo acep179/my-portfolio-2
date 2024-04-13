@@ -10,6 +10,7 @@ import { SectionHeading } from "../components";
 const About = () => {
   return(
     <Grid
+      id="about"
       m='auto'
       mt={20}
       mb={20}

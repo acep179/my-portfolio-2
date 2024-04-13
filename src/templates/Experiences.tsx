@@ -8,9 +8,7 @@ import {
   ListItem,
   Step,
   StepDescription,
-  StepIcon,
   StepIndicator,
-  StepNumber,
   StepSeparator,
   StepStatus,
   StepTitle,
@@ -40,7 +38,7 @@ const Experiences = () => {
       templateColumns={['repeat(1, 1fr)']}
       rowGap={6}
     >
-      <SectionHeading marginBottom={8} title="2. Experiences" colSpan={[0, null, 5]} />
+      <SectionHeading marginBottom={8} title="3. Experiences" colSpan={[0, null, 5]} />
       
       <GridItem
         maxW={

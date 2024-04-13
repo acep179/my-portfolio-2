@@ -75,8 +75,13 @@ const Navbar = () => {
 
         <Spacer />
 
-        <List display={['none',null,'flex']} gap={[5,null,null,7]}>
+        <List display={['none',null,'flex']}  alignItems='center' gap={[5,null,null,7]}>
           <MenuList _hover={{marginBottom:-1, paddingBottom:-1}} />
+          <ListItem>
+            <ChakraLink as={GatsbyLink} href="/cv">
+              <Button colorScheme="teal" variant='outline' >Resume</Button>
+            </ChakraLink>
+          </ListItem>
         </List>
 
         <Button onClick={onOpen} colorScheme='teal' variant='ghost' display={['block', null, 'none']} >

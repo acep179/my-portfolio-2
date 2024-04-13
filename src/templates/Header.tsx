@@ -1,10 +1,13 @@
 import * as React from "react";
+import { Link as GatsbyLink } from "gatsby";
 import {
   Heading,
   Text,
   Box,
-  Button
+  Button,
+  Link as ChakraLink
 } from "@chakra-ui/react";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const Header = () => {
 
@@ -59,7 +62,9 @@ const Header = () => {
         {whoAmI}
       </Text>
 
-      <Button colorScheme="teal" variant='outline' size='lg' >Resume</Button>
+      <ChakraLink as={GatsbyLink} href="/cv">
+        <Button colorScheme="teal" variant='outline' size='lg' rightIcon={<FaArrowRightLong />} >Resume</Button>
+      </ChakraLink>
     </Box>
   )
 }

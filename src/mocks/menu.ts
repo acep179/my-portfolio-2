@@ -12,21 +12,26 @@ const menus: menuType[] = [
     },
     {
         id: 2,
+        title: 'Skills',
+        link: '#skills'
+    },
+    {
+        id: 3,
         title: 'Experiences',
         link: '#experiences'
     },
     {
-        id: 3,
+        id: 4,
         title: 'Projects',
         link: '#projects'
     },
     {
-        id: 4,
+        id: 5,
         title: 'Contact',
         link: '#contact'
     },
     {
-        id: 5,
+        id: 6,
         title: 'Find Me',
         link: '#findMe'
     },

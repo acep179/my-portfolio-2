@@ -29,7 +29,7 @@ const Header = () => {
       <Text
         fontSize='large'
         fontFamily="'Fira Mono', monospace"
-        mt={14}
+        mt={24}
         mb={2}
         color="teal"
         _dark={{color:"teal.300"}}

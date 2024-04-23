@@ -23,6 +23,8 @@ import {
   DrawerCloseButton,
   Box,
   useDisclosure,
+  Image,
+  DrawerHeader,
 } from "@chakra-ui/react";
 
 const MenuList = (props:HTMLChakraProps<"li">) => {
@@ -62,20 +64,28 @@ const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   return (
-    <Center backgroundColor='gray.800' zIndex={100} position='fixed' fontFamily="'Fira Mono', monospace" >
+    <Center
+      backgroundColor='white'
+      boxShadow='0px 10px 22px 1px rgba(49,151,149,0.1)'
+      _dark={{backgroundColor:'gray.800',boxShadow:'0px 10px 22px 1px rgba(49,151,149,0.26)', border:0}} zIndex={100} left={0} right={0} position='fixed' fontFamily="'Fira Mono', monospace" >
       <Flex
         width={['full','container.sm','container.md','container.lg','container.xl']}
         padding={['10px 5px 10px 10px', null, '10px 20px 10px 10px']}
         alignItems='center'
         gap='2'
       >
-        <Box p='2'>
+        <Flex gap={2} alignItems='center'>
+          <Image 
+            boxSize='50px'
+            src='/logo.png'
+            alt='Dan Abramov' 
+          />
           <Heading color='teal.500' _dark={{color:'teal.300'}} size='md'>Acep Awaludin</Heading>
-        </Box>
+        </Flex>
 
         <Spacer />
 
-        <List display={['none',null,'flex']}  alignItems='center' gap={[5,null,null,7]}>
+        <List display={['none',null, null,'flex']}  alignItems='center' gap={[5,null,null,7]}>
           <MenuList _hover={{marginBottom:-1, paddingBottom:-1}} />
           <ListItem>
             <ChakraLink as={GatsbyLink} href="/cv">
@@ -84,7 +94,7 @@ const Navbar = () => {
           </ListItem>
         </List>
 
-        <Button onClick={onOpen} colorScheme='teal' variant='ghost' display={['block', null, 'none']} >
+        <Button onClick={onOpen} colorScheme='teal' variant='ghost' display={['block', null, null, 'none']} >
           <Icon as={IoMenu} boxSize={7} />
         </Button>
 
@@ -105,6 +115,9 @@ const Navbar = () => {
                 _dark:{backgroundColor:'teal.700'}
               }}
             />
+            <DrawerHeader>
+              <Heading fontSize='larger' color='teal' _dark={{color:'teal.300'}}>Please Select</Heading>
+            </DrawerHeader>
 
             <DrawerBody marginTop={10}>
               <List>
@@ -113,7 +126,7 @@ const Navbar = () => {
             </DrawerBody>
 
             <DrawerFooter>
-              {/* kasih sosmed */}
+              {/* kasih list sosmed */}
             </DrawerFooter>
           </DrawerContent>
         </Drawer>

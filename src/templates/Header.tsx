@@ -14,7 +14,7 @@ const Header = () => {
   const greeting = 'Hi, my name is'
   const name = 'Acep Awaludin.'
   const jargon = 'I build things for the web.'
-  const whoAmI = "I'm a fullstack web developer. Currently, I work at PT. Integrasi Logistik Cipta Solusi (ILCS)."
+  const whoAmI = "I'm a fullstack web developer. Currently, I work at PT. Integrasi Logistik Cipta Solusi (ILCS). I'm also a freelancer at Fastwork."
 
   return(
     <Box

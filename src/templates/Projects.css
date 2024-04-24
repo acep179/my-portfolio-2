@@ -1,0 +1,75 @@
+:root {
+  --scroll-bg-color-light: #E2E8F0;
+  --scroll-bg-color-dark: #4A5568;
+  --scroll-button-color-light: #636363;
+  --scroll-button-color-dark: #CBD5E0;
+}
+
+.card-header::-webkit-scrollbar {
+  display: none;
+}
+
+.card-header:hover::-webkit-scrollbar {
+  display: block;
+}
+
+.card-header-light:hover::-webkit-scrollbar {
+  background: var(--scroll-bg-color-light);
+}
+
+.card-header-dark:hover::-webkit-scrollbar {
+  background: var(--scroll-bg-color-dark);
+}
+
+.card-header-light:hover::-webkit-scrollbar-thumb {
+  background: var(--scroll-button-color-light);
+  border-radius: 50px;
+  border: 3.5px solid transparent;
+  background-clip: content-box;
+}
+
+.card-header-dark:hover::-webkit-scrollbar-thumb {
+  background: var(--scroll-button-color-dark);
+  border-radius: 50px;
+  border: 3.5px solid transparent; /* Menambahkan ruang transparan di sebelah kiri dan kanan thumb */
+  background-clip: content-box; /* Memastikan ruang transparan tidak diisi oleh warna latar belakang */
+}
+
+/* Buttons */
+.card-header:hover::-webkit-scrollbar-button:single-button {
+  display: block;
+  border-style: solid;
+  height: 13px;
+  width: 16px;
+  cursor: pointer;
+}
+
+.card-header-light:hover::-webkit-scrollbar-button:single-button {
+  background-color: var(--scroll-bg-color-light);
+}
+
+.card-header-dark:hover::-webkit-scrollbar-button:single-button {
+  background-color: var(--scroll-bg-color-dark);
+}
+
+/* Up */
+.card-header-light:hover::-webkit-scrollbar-button:single-button:vertical:decrement {
+  border-width: 0 8px 8px 8px;
+  border-color: transparent transparent var(--scroll-button-color-light) transparent;
+}
+
+.card-header-dark:hover::-webkit-scrollbar-button:single-button:vertical:decrement {
+  border-width: 0 8px 8px 8px;
+  border-color: transparent transparent var(--scroll-button-color-dark) transparent;
+}
+
+/* Down */
+.card-header-light:hover::-webkit-scrollbar-button:single-button:vertical:increment {
+  border-width: 8px 8px 0 8px;
+  border-color: var(--scroll-button-color-light) transparent transparent transparent;
+}
+
+.card-header-dark:hover::-webkit-scrollbar-button:single-button:vertical:increment {
+  border-width: 8px 8px 0 8px;
+  border-color: var(--scroll-button-color-dark) transparent transparent transparent;
+}

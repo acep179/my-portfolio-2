@@ -1,3 +1,4 @@
 import SectionHeading from "./SectionHeading";
+import MyIcon from "./MyIcon";
 
-export { SectionHeading }
+export { SectionHeading, MyIcon }

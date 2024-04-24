@@ -77,7 +77,7 @@ const Navbar = () => {
         <Flex gap={2} alignItems='center'>
           <Image 
             boxSize='50px'
-            src='/logo.png'
+            src='/img/logo.png'
             alt='Dan Abramov' 
           />
           <Heading color='teal.500' _dark={{color:'teal.300'}} size='md'>Acep Awaludin</Heading>

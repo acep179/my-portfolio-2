@@ -12,7 +12,7 @@ import {
   Icon,
   Flex
 } from "@chakra-ui/react";
-import { SectionHeading } from "../components";
+import { SectionHeading, MyIcon } from "../components";
 import { skills } from "../mocks";
 
 const Skills = () => {
@@ -46,7 +46,7 @@ const Skills = () => {
                   {skillCategory.skills.map((skillType, index) => {
                     return(
                       <Flex key={index} direction='column' alignItems='center' >
-                        <Icon as={skillType.icon} fontSize={70} mb={3} color='teal' _dark={{color:'teal.300'}} />
+                        <MyIcon type={skillType.icon} fontSize={70} mb={3} color='teal' _dark={{color:'teal.300'}} />
                         <Text>{skillType.title}</Text>
                       </Flex>
                     )

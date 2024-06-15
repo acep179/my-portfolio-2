@@ -1,10 +1,13 @@
 import React from "react";
 
+import { BsWhatsapp, BsInstagram } from "react-icons/bs";
 import { FaReact, FaSass } from "react-icons/fa6";
-import { TbBrandNextjs } from "react-icons/tb";
-import { RiGatsbyLine } from "react-icons/ri";
-import { SiChakraui, SiTailwindcss, SiMui, SiExpress, SiNestjs, SiRedis, SiPostgresql, SiRabbitmq, SiGraphql, SiOracle } from "react-icons/si";
+import { FiMail } from "react-icons/fi";
 import { GrMysql } from "react-icons/gr";
+import { ImLinkedin2 } from "react-icons/im";
+import { RiGatsbyLine } from "react-icons/ri";
+import { SiChakraui, SiTailwindcss, SiMui, SiExpress, SiNestjs, SiRedis, SiPostgresql, SiRabbitmq, SiGraphql, SiOracle, SiFreelancer } from "react-icons/si";
+import { TbBrandNextjs, TbMailForward } from "react-icons/tb";
 
 import { Box, Icon, Tooltip } from "@chakra-ui/react";
 import { HTMLChakraProps } from '@chakra-ui/system'
@@ -21,6 +24,26 @@ const MyIcon = (props:myIconType) => {
 
   switch (props.type) {
     
+    case 'whatsapp':
+      icon = BsWhatsapp
+      break;
+
+    case 'ig':
+      icon = BsInstagram
+      break;
+
+    case 'linkedin':
+      icon = ImLinkedin2
+      break;
+
+    case 'email':
+      icon = FiMail
+      break;
+
+    case 'fastwork':
+      icon = SiFreelancer
+      break;
+
     case 'react-js':
       icon = FaReact
       break;
@@ -92,7 +115,7 @@ const MyIcon = (props:myIconType) => {
         placement="top"
         hasArrow
       >
-        <Box as="span">
+        <Box as="div">
           <Icon as={icon} {...props} />
         </Box>
       </Tooltip>

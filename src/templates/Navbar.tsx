@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { menus } from "../mocks"
+import { menus, socmeds } from "../mocks"
 import { Link as GatsbyLink } from "gatsby";
 import { IoMenu, IoClose } from "react-icons/io5";
 
@@ -21,11 +21,12 @@ import {
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
-  Box,
   useDisclosure,
   Image,
   DrawerHeader,
+  Link,
 } from "@chakra-ui/react";
+import { MyIcon } from '../components';
 
 const MenuList = (props:HTMLChakraProps<"li">) => {
   return (
@@ -126,7 +127,15 @@ const Navbar = () => {
             </DrawerBody>
 
             <DrawerFooter>
-              {/* kasih list sosmed */}
+              <Flex width='80%' margin='0 auto 0 auto' justify='space-between'>
+                {socmeds.map((socmed) => {
+                  return(
+                    <Link key={socmed.id} href={socmed.link}>
+                      <MyIcon fontSize={27} type={socmed.icon} tooltipLabel={socmed.username} />
+                    </Link>
+                  )
+                })}
+              </Flex>
             </DrawerFooter>
           </DrawerContent>
         </Drawer>

@@ -36,7 +36,7 @@ const About = () => {
 
       <GridItem borderRadius={20} order={[1, null, 1]} w='full' rowSpan={[0, null, 2]} colSpan={[0, null, 2]} borderWidth={[3, 4, 4]} borderColor='teal' overflow='hidden'>
         <Image 
-          src='/img/acep.jpg'
+          src='./img/acep.jpg'
           alt='Acep Awaludin'  />
       </GridItem>
     </Grid>

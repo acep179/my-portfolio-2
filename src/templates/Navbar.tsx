@@ -24,7 +24,6 @@ import {
   useDisclosure,
   Image,
   DrawerHeader,
-  Link,
 } from "@chakra-ui/react";
 import { MyIcon } from '../components';
 
@@ -130,9 +129,9 @@ const Navbar = () => {
               <Flex width='80%' margin='0 auto 0 auto' justify='space-between'>
                 {socmeds.map((socmed) => {
                   return(
-                    <Link key={socmed.id} href={socmed.link}>
+                    <ChakraLink as={GatsbyLink} key={socmed.id} href={socmed.link}>
                       <MyIcon fontSize={27} type={socmed.icon} tooltipLabel={socmed.username} />
-                    </Link>
+                    </ChakraLink>
                   )
                 })}
               </Flex>

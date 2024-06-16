@@ -25,11 +25,11 @@ const menus: menuType[] = [
         title: 'Projects',
         link: '#projects'
     },
-    {
-        id: 5,
-        title: 'Contact',
-        link: '#contact'
-    },
+    // {
+    //     id: 5,
+    //     title: 'Contact',
+    //     link: '#contact'
+    // },
     {
         id: 6,
         title: 'Find Me',

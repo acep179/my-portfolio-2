@@ -30,10 +30,10 @@ const socmeds:socmedType[] = [
   },
   {
     id: 4,
-    platform: 'E-Mail',
-    username: 'acep179.project@gmail.com',
-    link: 'mailto:acep179.project@gmail.com',
-    icon: 'email'
+    platform: 'Github',
+    username: '@acep179',
+    link: 'https://github.com/acep179',
+    icon: 'github'
   },
   {
     id: 5,
@@ -41,6 +41,13 @@ const socmeds:socmedType[] = [
     username: '@acep179',
     link: 'https://fastwork.id/user/acep179',
     icon: 'fastwork'
+  },
+  {
+    id: 6,
+    platform: 'E-Mail',
+    username: 'acep179.project@gmail.com',
+    link: 'mailto:acep179.project@gmail.com',
+    icon: 'email'
   },
 ]
 

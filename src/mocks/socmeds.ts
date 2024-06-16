@@ -11,7 +11,7 @@ const socmeds:socmedType[] = [
     id: 1,
     platform: 'WhatsApp',
     username: '0858 1342 6166',
-    link: 'https://wa.me/6285813456166',
+    link: 'https://wa.me/6285813426166',
     icon: 'whatsapp'
   },
   {

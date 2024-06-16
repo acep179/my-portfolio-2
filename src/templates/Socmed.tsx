@@ -20,7 +20,7 @@ function Socmed() {
       <Heading fontSize='xx-large'>My Contact and Social Media</Heading>
       {socmeds.map((socmed) => {
         return(
-          <ChakraLink width='max-content' as={GatsbyLink} marginLeft={5} key={socmed.id} href={socmed.link}>
+          <ChakraLink width='max-content' as={GatsbyLink} marginLeft={5} key={socmed.id} href={socmed.link} isExternal>
             <Tooltip
               label={socmed.platform}
               placement="top-end"

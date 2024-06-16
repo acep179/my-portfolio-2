@@ -131,7 +131,7 @@ const Navbar = () => {
               <Flex width='90%' margin='0 auto 0 auto' justify='space-between'>
                 {socmeds.map((socmed) => {
                   return(
-                    <ChakraLink as={GatsbyLink} key={socmed.id} href={socmed.link}>
+                    <ChakraLink as={GatsbyLink} key={socmed.id} href={socmed.link} isExternal>
                       <MyIcon fontSize={27} type={socmed.icon} tooltipLabel={socmed.username} />
                     </ChakraLink>
                   )
